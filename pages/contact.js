@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import swal from 'sweetalert';
 
 const Contact = () => {
 
@@ -26,21 +27,19 @@ const Contact = () => {
           phone:data.phone,
           message:data.message
         };
-        console.log(userData)
         axios.post("https://api-qa.letslearntogether.io/api/zysk/contact", userData).then((response) => {
-          console.log(response.status);
-          console.log(response.data.token);
+        //   console.log(response.status);
+          if(response.status === 200){
+            swal({
+                title:'Thanks for the message',
+                text:'Your submission was received :)',
+                icon:'success',
+                button:'okay'
+              });
+        }
+        //   console.log(response.data.token);
         })
-
-        .catch((error) => {
-            if (error.response) {
-                console.log("Respo Error");
-            } else if (error.request) {
-              console.log("network error");
-            } else {
-              console.log('Sucess');
-            }
-          });
+        
       };
 
 
