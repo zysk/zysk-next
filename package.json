@@ -2,7 +2,7 @@
   "name": "zysk",
   "private": true,
   "engines": {
-    "node": "^14.*"
+    "node": "^16.*"
   },
   "scripts": {
     "dev": "next dev",
