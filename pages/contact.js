@@ -1,4 +1,49 @@
+import { useState } from "react";
+import axios from "axios";
+
 const Contact = () => {
+
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        phone:"",
+        message:""
+      });
+      
+      const handleChange = (e) => {
+        const value = e.target.value;
+        setData({
+          ...data,
+          [e.target.name]: value
+        });
+      };
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        const userData = {
+          name: data.name,
+          email: data.email,
+          phone:data.phone,
+          message:data.message
+        };
+        console.log(userData)
+        axios.post("https://api-qa.letslearntogether.io/api/zysk/contact", userData).then((response) => {
+          console.log(response.status);
+          console.log(response.data.token);
+        })
+
+        .catch((error) => {
+            if (error.response) {
+                console.log("Respo Error");
+            } else if (error.request) {
+              console.log("network error");
+            } else {
+              console.log('Sucess');
+            }
+          });
+      };
+
+
     return (
         <>
             <section className="container mx-auto pb-20 pt-10 px-6 md:px-0">
@@ -16,7 +61,7 @@ const Contact = () => {
                     </div>
                     <div className="basis-2/5 py-5 w-full">
                         <h1 className="header mb-5">Write to us!</h1>
-                        <form name="contact" autoComplete="off" method="POST">
+                        <form name="contact" autoComplete="off" method="POST" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-6 gap-6">
                                 <div className="col-span-6">
                                     <label htmlFor="name" className=" block text-gray-700">
@@ -28,6 +73,7 @@ const Contact = () => {
                                         id="name"
                                         placeholder="John Doe"
                                         className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="col-span-6">
@@ -40,20 +86,22 @@ const Contact = () => {
                                         id="email"
                                         placeholder="test@example.com"
                                         className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                                        onChange={handleChange}
                                     />
                                 </div>
 
                                 <div className="col-span-6">
-                                    <label htmlFor="mobile" className="block text-gray-700">
+                                    <label htmlFor="phone" className="block text-gray-700">
                                         Phone Number
                                     </label>
                                     <input
                                         type="tel"
-                                        name="mobile"
+                                        name="phone"
                                         pattern="[0-9]{10}"
-                                        id="mobile"
+                                        id="phone"
                                         placeholder="xxxxx xxxxx"
                                         className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="col-span-6">
@@ -68,6 +116,7 @@ const Contact = () => {
                                             className="shadow-sm block w-full focus:ring-gray-300 focus:border-gray-300  border border-gray-300 rounded-md"
                                             defaultValue={''}
                                             placeholder="Please enter your message"
+                                            onChange={handleChange}
                                         />
                                     </div>
                                 </div>
