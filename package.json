@@ -1,6 +1,9 @@
 {
   "name": "zysk",
   "private": true,
+  "engines": {
+    "node": "^14.*"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
