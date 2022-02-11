@@ -18,7 +18,7 @@ export default async (req, res) => {
   `;
 
   const data = {
-    to: 'contact@zysk.in',
+    to: 'vishak.gowda@zysk.in',
     from: 'contact@zysk.in',
     subject: `Alert..! Contact form submission`,
     text: message,
