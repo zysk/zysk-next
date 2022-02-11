@@ -78,7 +78,7 @@ export default function Example() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-52 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-56 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                       <div className="ring-1 rounded-sm ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-3 bg-white px-4 py-3">
                           <a
@@ -100,13 +100,22 @@ export default function Example() {
                             Custom Applications
                           </a>
                           <a
-                            href="/services/ui-development"
+                            href="/services/front-end-development"
                             className={
-                              serviceActive[2] == "ui-development"
+                              serviceActive[2] == "front-end-development"
                                 ? "active text-base text-gray-600"
                                 : "text-base text-gray-600"}
                           >
                             Front-end Development
+                          </a>
+                          <a
+                            href="/services/hybrid-mobile-app"
+                            className={
+                              serviceActive[2] == "hybrid-mobile-app"
+                                ? "active text-base text-gray-600"
+                                : "text-base text-gray-600"}
+                          >
+                            Hybrid Apps Development
                           </a>
                         </div>
                       </div>
@@ -209,10 +218,14 @@ export default function Example() {
                         serviceActive[2] == "custom-application"
                           ? "active font-semibold text-sm"
                           : "font-semibold text-sm"}>Custom Applications</a></p>
-                      <p className="pl-3 pt-1"><a href="/services/ui-development" className={
-                        serviceActive[2] == "ui-development"
+                      <p className="pl-3 pt-1"><a href="/services/front-end-development" className={
+                        serviceActive[2] == "front-end-development"
                           ? "active font-semibold text-sm"
                           : "font-semibold text-sm"}>Front-end Development</a></p>
+                      <p className="pl-3 pt-1"><a href="/services/hybrid-mobile-app" className={
+                        serviceActive[2] == "hybrid-mobile-app"
+                          ? "active font-semibold text-sm"
+                          : "font-semibold text-sm"}>Hybrid Apps Development</a></p>
                     </div>
                   </div>
                   <a

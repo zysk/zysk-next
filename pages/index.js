@@ -102,7 +102,7 @@ const Home = () => {
             <h2 className="title">Front-end Development</h2>
             <p className="py-3">Our expertise with Angular and React.js will ensure that your Back-end APIs will get best User Interfaces
               without comprimising the user...</p>
-            <a className="link" href="./services/ui-development">Read more</a>
+            <a className="link" href="./services/front-end-development">Read more</a>
           </div>
 
           <div className="service-thumb text-dark basis-1/3 py-4">
@@ -124,7 +124,7 @@ const Home = () => {
             <h2 className="title">Hybrid App Development</h2>
             <p className="py-3">Don't want the hassle of managing two versions (Android and iOS) of the same app? Hybrid Apps are the way to
               go! Increase engagement by reaching your customers on multiple...</p>
-            <a className="link" href="./services/hybrid-mobile-apps.html">Read more</a>
+            <a className="link" href="./services/hybrid-mobile-app">Read more</a>
           </div>
 
           <div className="service-thumb text-dark basis-1/3 py-4">
