@@ -109,16 +109,16 @@ const WebDevelopment = () => {
                 <img
                   src="/img/services/webflow.png"
                   className="h-16"
-                  alt="Grunt logo"
-                  title="Grunt"
+                  alt="Strapi logo"
+                  title="Strapi"
                 />
               </picture>
               <picture>
                 <img
                   src="/img/services/shopify.png"
                   className="w-15 h-16"
-                  alt="Gulp logo"
-                  title="Gulp"
+                  alt="shopify logo"
+                  title="shopify"
                 />
               </picture>
             </div>
@@ -127,8 +127,8 @@ const WebDevelopment = () => {
                 <img
                   src="/img/services/tailwind.png"
                   className="h-28"
-                  alt="Bower logo"
-                  title="Bower"
+                  alt="Tailwind logo"
+                  title="Tailwind"
                 />
               </picture>
               <picture>
@@ -153,24 +153,24 @@ const WebDevelopment = () => {
                 <img
                   src="/img/services/strapi-logo.png"
                   className="h-12"
-                  alt="Grunt logo"
-                  title="Grunt"
+                  alt="strapi logo"
+                  title="Strapi"
                 />
               </picture>
               <picture>
                 <img
                   src="/img/services/next.png"
                   className="h-10"
-                  alt="Grunt logo"
-                  title="Grunt"
+                  alt="Next logo"
+                  title="Next"
                 />
               </picture>
               <picture>
                 <img
                   src="/img/services/ghost.png"
                   className="h-10"
-                  alt="Grunt logo"
-                  title="Grunt"
+                  alt="Ghostt logo"
+                  title="Ghost"
                 />
               </picture>
             </div>
