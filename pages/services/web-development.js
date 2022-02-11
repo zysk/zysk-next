@@ -83,7 +83,7 @@ const WebDevelopment = () => {
                                 />
                             </picture>
                             <picture>
-                                <img src="/img/services/gulp-logo.svg" alt="Gulp logo" title="Gulp" />
+                                <img src="/img/services/nextjs.svg" alt="Gulp logo" title="Gulp" />
                             </picture>
                         </div>
                         <div className="flex justify-between items-center flex-wrap gap-y-10 mt-6">

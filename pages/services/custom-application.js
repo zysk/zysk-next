@@ -10,6 +10,7 @@ const CustomApplication = () => {
     who want to bring their ideas to life with the use of latest technologies." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            
             <section className="container-fluid py-16 mx-auto">
 
                 <div className="service flex justify-around flex-wrap">
