@@ -8,7 +8,7 @@ export default async (req, res) => {
   const message = `
    <div>
    <h3 style="font-size:17px;font-weight:600">Hey there!<h3>
-   <p class="font-size:15px;line-height:24px">You just received a new submission to your <span style="font-size:16px;font-weight:600">Zysk Contact form form.</span> <br/> Here is the data that was collected...
+   <p class="font-size:15px;line-height:24px">You just received a new submission to your <span style="font-size:16px;font-weight:600">Zysk Contact form</span> <br/> Here is the data that was collected...
    </p>
    </div>
     Name : ${body.name}\r\n
