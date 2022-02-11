@@ -65,6 +65,15 @@ const CustomApplication = () => {
                                 <img src="/img/services/mysql-logo.svg" alt="MySQL logo" title="MySQL" />
                             </picture>
                             <picture>
+                                <img src="/img/services/node.png" className="h-16" alt="React.js logo" title="React.js" />
+                            </picture>
+                            <picture>
+                                <img src="/img/services/postgre.jpeg" className="h-20" alt="React.js logo" title="React.js" />
+                            </picture>
+                            <picture>
+                                <img src="/img/services/vue-logo.svg" alt="React.js logo" title="React.js" />
+                            </picture>
+                            <picture>
                                 <img src="/img/services/react-logo.svg" alt="React.js logo" title="React.js" />
                             </picture>
                         </div>
