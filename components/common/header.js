@@ -126,7 +126,7 @@ export default function Example() {
             </Popover>
 
             <a
-              href="https://blog.zysk.in/"
+              href="https://blog.zysk.tech/"
               className="nav-item"
               target="_blank"
             >
@@ -229,7 +229,7 @@ export default function Example() {
                     </div>
                   </div>
                   <a
-                    href="https://blog.zysk.in/"
+                    href="https://blog.zysk.tech/"
                     className="nav-item"
                     target="_blank"
                   >
