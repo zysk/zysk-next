@@ -53,7 +53,7 @@ const UiDevelopment = () => {
                             We have extensive experience in working with:
                         </p>
 
-                        <div className="flex justify-between items-center mt-5">
+                        <div className="flex justify-between items-center mt-5 gap-x-8">
                             <picture>
                                 <img src="/img/services/react-logo.svg" alt="React.js logo"
                                     title="React.js" />
@@ -64,6 +64,18 @@ const UiDevelopment = () => {
                             </picture>
                             <picture>
                                 <img src="/img/services/vue-logo.svg" alt="Vue.js logo" title="Vue.js"
+                                />
+                            </picture>
+                        
+                        </div>
+                        <div className="flex justify-between items-center mt-5 gap-x-5">
+                          
+                            <picture>
+                                <img src="/img/services/next.png" className="h-16" alt="Next js" title="Next.js"
+                                />
+                            </picture>
+                            <picture>
+                                <img src="/img/services/nuxt.png" alt="Nuxt.js logo" title="Nuxt.js"
                                 />
                             </picture>
                         </div>

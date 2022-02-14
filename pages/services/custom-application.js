@@ -45,7 +45,7 @@ const CustomApplication = () => {
                         <p className="highlight mb-4">
                             We take pride in having worked as technology partners with some of the most promising startups in India and we’re rearing to get started with yours!
                         </p>
-                        <p className="highlight mb-4">
+                        <p className="mb-4">
                             We have extensive experience in working with:
                         </p>
                         <div className="flex justify-between items-center flex-wrap mt-8 gap-y-3">
@@ -65,16 +65,16 @@ const CustomApplication = () => {
                                 <img src="/img/services/mysql-logo.svg" alt="MySQL logo" title="MySQL" />
                             </picture>
                             <picture>
-                                <img src="/img/services/node.png" className="h-16" alt="React.js logo" title="React.js" />
+                                <img src="/img/services/node.png" className="h-16" alt="Node js logo" title="Node js" />
                             </picture>
                             <picture>
-                                <img src="/img/services/postgre.jpeg" className="h-20" alt="React.js logo" title="React.js" />
+                                <img src="/img/services/postgre.jpeg" className="h-20" alt="postgre logo" title="postgre" />
                             </picture>
                             <picture>
-                                <img src="/img/services/vue-logo.svg" alt="React.js logo" title="React.js" />
+                                <img src="/img/services/vue-logo.svg" alt="Vue logo" title="Vue" />
                             </picture>
                             <picture>
-                                <img src="/img/services/react-logo.svg" alt="React.js logo" title="React.js" />
+                                <img src="/img/services/react-logo.svg" alt="React logo" title="React" />
                             </picture>
                         </div>
 
