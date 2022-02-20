@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+const Header = () => {
   const router = useRouter();
   const [show, setShow] = useState("false");
   const activeElement = router.pathname;
@@ -27,8 +27,10 @@ export default function Example() {
             </a>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
-            <Popover.Button className="bg-white rounded-md inline-flex items-center justify-center 
-            text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+            <Popover.Button
+              className="bg-white rounded-md inline-flex items-center justify-center 
+            text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+            >
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -86,7 +88,8 @@ export default function Example() {
                             className={
                               serviceActive[2] == "web-development"
                                 ? "active text-base text-gray-600"
-                                : "text-base text-gray-600"}
+                                : "text-base text-gray-600"
+                            }
                           >
                             Websites
                           </a>
@@ -95,7 +98,8 @@ export default function Example() {
                             className={
                               serviceActive[2] == "custom-application"
                                 ? "active text-base text-gray-600"
-                                : "text-base text-gray-600"}
+                                : "text-base text-gray-600"
+                            }
                           >
                             Custom Applications
                           </a>
@@ -104,7 +108,8 @@ export default function Example() {
                             className={
                               serviceActive[2] == "front-end-development"
                                 ? "active text-base text-gray-600"
-                                : "text-base text-gray-600"}
+                                : "text-base text-gray-600"
+                            }
                           >
                             Front-end Development
                           </a>
@@ -113,7 +118,8 @@ export default function Example() {
                             className={
                               serviceActive[2] == "hybrid-mobile-app"
                                 ? "active text-base text-gray-600"
-                                : "text-base text-gray-600"}
+                                : "text-base text-gray-600"
+                            }
                           >
                             Hybrid Apps Development
                           </a>
@@ -129,6 +135,7 @@ export default function Example() {
               href="https://blog.zysk.tech/"
               className="nav-item"
               target="_blank"
+              rel="noreferrer"
             >
               Blog
             </a>
@@ -136,6 +143,7 @@ export default function Example() {
               href="https://zysktechnologies.kekahire.com/"
               className="nav-item"
               target="_blank"
+              rel="noreferrer"
             >
               Careers
             </a>
@@ -205,33 +213,67 @@ export default function Example() {
                       className={
                         serviceActive[1] == "services"
                           ? "active nav-item dropdown-toggle"
-                          : "nav-item dropdown-toggle"}
+                          : "nav-item dropdown-toggle"
+                      }
                     >
                       Services
                     </a>
                     <div className={show ? "hidden" : "pt-2"}>
-                      <p className="pl-3 pt-1"><a href="/services/web-development" className={
-                        serviceActive[2] == "web-development"
-                          ? "active font-semibold text-sm"
-                          : "font-semibold text-sm"}>Websites</a></p>
-                      <p className="pl-3 pt-1"><a href="/services/custom-application" className={
-                        serviceActive[2] == "custom-application"
-                          ? "active font-semibold text-sm"
-                          : "font-semibold text-sm"}>Custom Applications</a></p>
-                      <p className="pl-3 pt-1"><a href="/services/front-end-development" className={
-                        serviceActive[2] == "front-end-development"
-                          ? "active font-semibold text-sm"
-                          : "font-semibold text-sm"}>Front-end Development</a></p>
-                      <p className="pl-3 pt-1"><a href="/services/hybrid-mobile-app" className={
-                        serviceActive[2] == "hybrid-mobile-app"
-                          ? "active font-semibold text-sm"
-                          : "font-semibold text-sm"}>Hybrid Apps Development</a></p>
+                      <p className="pl-3 pt-1">
+                        <a
+                          href="/services/web-development"
+                          className={
+                            serviceActive[2] == "web-development"
+                              ? "active font-semibold text-sm"
+                              : "font-semibold text-sm"
+                          }
+                        >
+                          Websites
+                        </a>
+                      </p>
+                      <p className="pl-3 pt-1">
+                        <a
+                          href="/services/custom-application"
+                          className={
+                            serviceActive[2] == "custom-application"
+                              ? "active font-semibold text-sm"
+                              : "font-semibold text-sm"
+                          }
+                        >
+                          Custom Applications
+                        </a>
+                      </p>
+                      <p className="pl-3 pt-1">
+                        <a
+                          href="/services/front-end-development"
+                          className={
+                            serviceActive[2] == "front-end-development"
+                              ? "active font-semibold text-sm"
+                              : "font-semibold text-sm"
+                          }
+                        >
+                          Front-end Development
+                        </a>
+                      </p>
+                      <p className="pl-3 pt-1">
+                        <a
+                          href="/services/hybrid-mobile-app"
+                          className={
+                            serviceActive[2] == "hybrid-mobile-app"
+                              ? "active font-semibold text-sm"
+                              : "font-semibold text-sm"
+                          }
+                        >
+                          Hybrid Apps Development
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <a
                     href="https://blog.zysk.tech/"
                     className="nav-item"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Blog
                   </a>
@@ -239,6 +281,7 @@ export default function Example() {
                     href="https://zysktechnologies.kekahire.com/"
                     className="nav-item"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Careers
                   </a>
@@ -256,8 +299,9 @@ export default function Example() {
             </div>
           </div>
         </Popover.Panel>
-
       </Transition>
     </Popover>
   );
-}
+};
+
+export default Header;

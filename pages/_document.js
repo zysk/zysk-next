@@ -1,4 +1,4 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getServerSideProps(ctx) {
@@ -7,11 +7,9 @@ class MyDocument extends Document {
   }
 
   render() {
-    const name = 'Gojek';
     return (
       <Html lang="en">
         <Head>
-       
           {/* Enable GTM only for production environment */}
           <script
             async
@@ -29,11 +27,10 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-
           {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
-          {process.env.env == 'PROD' && (
+          {process.env.env == "PROD" && (
             <>
               <script
                 src="https://t.ghostboard.io/min.js"
