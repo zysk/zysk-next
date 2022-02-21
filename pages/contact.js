@@ -76,7 +76,7 @@ const Contact = () => {
                     <div className="basis-1/2 py-5 order-last md:order-first">
                         <h1 className="header">Say Hello!</h1>
                         <p className="highlight py-5">
-                            We love coffee and good conversations, if you'd like to meet us, feel free to drop by.
+                            {`We love coffee and good conversations, if you'd like to meet us, feel free to drop by.`}
                         </p>
                         <div className="gmap">
                             <iframe
