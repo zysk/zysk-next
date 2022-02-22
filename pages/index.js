@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Button from "../components/common/button";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <section className="py-10 container mx-auto px-6 xl:px-0">
         <div className="flex justify-between items-center flex-col sm:flex-row">
           <div className="basis-1/2">
-            <h1 id="typedtext" className="header mb-7">
+            <h1 className="header mb-7">
               We get our geek hats on
               <br />
               and code your ideas to life.
@@ -27,15 +28,9 @@ const Home = () => {
               expertise.
             </p>
             <div className="mt-10">
-              <a
-                href="/about"
-                className="btn-custom btn-black mr-4 mb-2 px-12 py-2"
-              >
-                Read More
-              </a>
-              <a href="/contact" className="btn-custom btn-red mb-2 px-12 py-2">
-                Hire Us
-              </a>
+              <Button text="Read more" variant="black" url="/about" />
+
+              <Button text="Hire Us" variant="red" url="/contact" />
             </div>
           </div>
           <div className="basis-1/7 hidden md:block">

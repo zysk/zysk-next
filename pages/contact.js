@@ -1,39 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import swal from "sweetalert";
 
 const Contact = () => {
-  async function handleOnSubmit(e) {
-    e.preventDefault();
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-    const formData = {};
-
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setData({
+      ...data,
+      [e.target.name]: value,
     });
+  };
 
-    await fetch("/api/mail", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then(() => {
-        swal({
-          title: "Thanks for the message",
-          text: "Your submission was received :)",
-          icon: "success",
-          button: "okay",
-        });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const userData = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    };
+    axios
+      .post("https://usebasin.com/f/ab2214293c2b", userData)
+      .then((response) => {
+        // console.log(response.status);
+        // console.log(response.data.token);
+        if (response.status === 200) {
+          swal({
+            title: "Thanks for the message",
+            text: "Your submission was received :)",
+            icon: "success",
+            button: "okay",
+          });
+        }
       })
-      .catch(() => {
-        swal({
-          title: "Something Went Wrong",
-          text: "please try after sometime:)",
-          icon: "error",
-          button: "okay",
-        });
+
+      .catch((error) => {
+        if (error.response) {
+          swal({
+            title: "Something Went Wrong",
+            text: "please try after sometime:)",
+            icon: "error",
+            button: "okay",
+          });
+        } else if (error.request) {
+          swal({
+            title: "Network Error",
+            text: "please try after sometime:)",
+            icon: "error",
+            button: "okay",
+          });
+        } else {
+          swal({
+            title: "Thanks for the message",
+            text: "Your submission was received :)",
+            icon: "success",
+            button: "okay",
+          });
+        }
       });
-  }
+  };
 
   return (
     <>
@@ -42,8 +74,7 @@ const Contact = () => {
           <div className="basis-1/2 py-5 order-last md:order-first">
             <h1 className="header">Say Hello!</h1>
             <p className="highlight py-5">
-              We love coffee and good conversations, if {`you'd`} like to meet
-              us, feel free to drop by.
+              {`We love coffee and good conversations, if you'd like to meet us, feel free to drop by.`}
             </p>
             <div className="gmap">
               <iframe
@@ -60,7 +91,7 @@ const Contact = () => {
               name="contact"
               autoComplete="off"
               method="POST"
-              onSubmit={handleOnSubmit}
+              onSubmit={handleSubmit}
             >
               <div className="grid grid-cols-6 gap-6">
                 <div className="col-span-6">
@@ -73,6 +104,7 @@ const Contact = () => {
                     id="name"
                     placeholder="John Doe"
                     className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="col-span-6">
@@ -85,6 +117,7 @@ const Contact = () => {
                     id="email"
                     placeholder="test@example.com"
                     className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -99,6 +132,7 @@ const Contact = () => {
                     id="phone"
                     placeholder="xxxxx xxxxx"
                     className="mt-1 focus:ring-gray-300 focus:border-gray-300 block w-full shadow-sm  border-gray-300 rounded-md"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="col-span-6">
@@ -113,6 +147,7 @@ const Contact = () => {
                       className="shadow-sm block w-full focus:ring-gray-300 focus:border-gray-300  border border-gray-300 rounded-md"
                       defaultValue={""}
                       placeholder="Please enter your message"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>

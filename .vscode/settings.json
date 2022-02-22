@@ -3,6 +3,7 @@
         "headlessui",
         "heroicons",
         "noreferrer",
+        "semibold",
         "tailwindcss"
     ]
 }
