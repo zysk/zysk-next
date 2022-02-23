@@ -45,7 +45,7 @@ const Header = () => {
                   <Link href={link.url}>
                     <a
                       className={
-                        pathname == link.url ? "active nav-item" : "nav-item"
+                        pathname === link.url ? "active nav-item" : "nav-item"
                       }
                       rel={link.type === "external" ? "noreferrer" : ""}
                       target={link.type === "external" ? "_blank" : ""}
@@ -158,7 +158,7 @@ const Header = () => {
                         <Link key={link.id} href={link.url}>
                           <a
                             className={
-                              pathname == link.url
+                              pathname === link.url
                                 ? "active nav-item"
                                 : "nav-item"
                             }

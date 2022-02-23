@@ -4,6 +4,7 @@
         "heroicons",
         "noreferrer",
         "semibold",
+        "swal",
         "tailwindcss"
     ]
 }

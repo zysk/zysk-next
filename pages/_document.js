@@ -30,7 +30,7 @@ class MyDocument extends Document {
           {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
-          {process.env.env == "PROD" && (
+          {process.env.env === "PROD" && (
             <>
               <script
                 src="https://t.ghostboard.io/min.js"

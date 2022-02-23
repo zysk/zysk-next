@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";
 
@@ -29,41 +29,37 @@ const Contact = () => {
     axios
       .post("https://usebasin.com/f/ab2214293c2b", userData)
       .then((response) => {
-        // console.log(response.status);
-        // console.log(response.data.token);
-        if (response.status === 200) {
+        if (response.status === 200)
           swal({
             title: "Thanks for the message",
             text: "Your submission was received :)",
             icon: "success",
             button: "okay",
           });
-        }
       })
 
       .catch((error) => {
-        if (error.response) {
+        if (error.response)
           swal({
             title: "Something Went Wrong",
             text: "please try after sometime:)",
             icon: "error",
             button: "okay",
           });
-        } else if (error.request) {
+        else if (error.request)
           swal({
             title: "Network Error",
             text: "please try after sometime:)",
             icon: "error",
             button: "okay",
           });
-        } else {
+        else
           swal({
             title: "Thanks for the message",
             text: "Your submission was received :)",
             icon: "success",
             button: "okay",
           });
-        }
       });
   };
 
