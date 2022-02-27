@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Button from "../components/common/button";
+import { clients } from "../components/home/data";
+import LogoCloud from "../components/home/client-slider";
 
 const Home = () => {
   return (
@@ -267,114 +269,8 @@ const Home = () => {
         <header>
           <h1 className="header pb-14">Our Marquee Clients</h1>
         </header>
-        <div className="flex justify-around items-center mb-md-4 flex-wrap gap-y-10 md:gap-y-0">
-          <a
-            href="https://www.gojek.io/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            <figure className="client">
-              <img
-                src="/img/clients/gojek-logo.svg"
-                className="illustration"
-                alt="Gojek"
-              />
-              <figcaption className="title sr-only">Gojek</figcaption>
-            </figure>
-          </a>
-          <figure className="client">
-            <a
-              href="https://flutura.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/flutura-logo-blue.png"
-                className="illustration"
-                alt="Flutura Decision Sciences Private Limited"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              Flutura Decision Sciences Private Limited
-            </figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://meesho.io/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/meesho.png"
-                className="illustration"
-                alt="Meesho Tech"
-              />
-            </a>
-            <figcaption className="title sr-only">Meesho Tech</figcaption>
-          </figure>
-        </div>
-        <div className="flex justify-around items-center mt-10 flex-wrap gap-y-10 md:gap-y-0">
-          <figure className="client">
-            <a
-              href="https://gethyphen.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/gethyphen.png"
-                className="illustration"
-                alt="getHyphen"
-              />
-            </a>
-            <figcaption className="title sr-only">getHyphen</figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://pacewisdom.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/pacewisdom-logo.png"
-                className="illustration"
-                alt="Pace Wisdom Solutions Pvt Ltd"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              Pace Wisdom Solutions Private Limited
-            </figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://www.honeydue.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/honeydue-logo.png"
-                className="illustration"
-                alt="Honeydue"
-              />
-            </a>
-            <figcaption className="title sr-only">Honeydue</figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="http://addresshealth.in/web/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/AddressHealth.png"
-                className="illustration"
-                alt="AddressHealth Solutions India Private Limited"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              AddressHealth Solutions India Pvt Ltd
-            </figcaption>
-          </figure>
-        </div>
+
+        <LogoCloud data={clients} />
       </section>
       {/* Our Clients */}
     </>
