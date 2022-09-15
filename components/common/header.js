@@ -139,14 +139,14 @@ const Header = () => {
             >
               Blog
             </a>
-//             <a
-//               href="https://zysktechnologies.kekahire.com/"
-//               className="nav-item"
-//               target="_blank"
-//               rel="noreferrer"
-//             >
-//               Careers
-//             </a>
+            <a
+              href="https://zysktechnologies.kekahire.com/"
+              className="nav-item"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Careers
+            </a>
             <span
               className={
                 router.pathname == "/contact" ? "active nav-item" : "nav-item"
@@ -277,7 +277,15 @@ const Header = () => {
                   >
                     Blog
                   </a>
+                  <span
+                    className={
+                      router.pathname == "/contact"
+                        ? "active nav-item"
+                        : "nav-item"
+                    }
+                  >
                     <a href="/contact">Contact</a>
+                  </span>
                 </nav>
               </div>
             </div>
