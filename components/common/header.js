@@ -139,14 +139,6 @@ const Header = () => {
             >
               Blog
             </a>
-            <a
-              href="https://zysktechnologies.kekahire.com/"
-              className="nav-item"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Careers
-            </a>
             <span
               className={
                 router.pathname == "/contact" ? "active nav-item" : "nav-item"
