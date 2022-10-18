@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
-class MyDocument extends Document {  
+class MyDocument extends Document {
   static async getServerSideProps(ctx) {
     const initialProps = await Document.getServerSideProps(ctx);
     return { ...initialProps };
@@ -24,13 +24,12 @@ class MyDocument extends Document {
               gtag('config', 'UA-66233587-1');
          `,
             }}
-          />          
+          />
         </Head>
         <body>
           {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
-          
         </body>
       </Html>
     );

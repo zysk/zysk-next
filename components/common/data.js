@@ -44,12 +44,6 @@ export const links = [
   },
   {
     id: 9,
-    name: "Careers",
-    url: "https://zysktechnologies.kekahire.com/",
-    type: "external",
-  },
-  {
-    id: 10,
     name: "Contact",
     url: "/contact",
   },
