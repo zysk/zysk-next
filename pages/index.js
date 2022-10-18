@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Button from "../components/common/button";
+import { clients } from "../components/home/data";
+import LogoCloud from "../components/home/client-slider";
 
 const Home = () => {
   return (
@@ -17,7 +20,7 @@ const Home = () => {
       <section className="py-10 container mx-auto px-6 xl:px-0">
         <div className="flex justify-between items-center flex-col sm:flex-row">
           <div className="basis-1/2">
-            <h1 id="typedtext" className="header mb-7">
+            <h1 className="header mb-7">
               We get our geek hats on
               <br />
               and code your ideas to life.
@@ -27,15 +30,9 @@ const Home = () => {
               expertise.
             </p>
             <div className="mt-10">
-              <a
-                href="/about"
-                className="btn-custom btn-black mr-4 mb-2 px-12 py-2"
-              >
-                Read More
-              </a>
-              <a href="/contact" className="btn-custom btn-red mb-2 px-12 py-2">
-                Hire Us
-              </a>
+              <Button text="Read more" variant="black" url="/about" />
+
+              <Button text="Hire Us" variant="red" url="/contact" />
             </div>
           </div>
           <div className="basis-1/7 hidden md:block">
@@ -272,114 +269,8 @@ const Home = () => {
         <header>
           <h1 className="header pb-14">Our Marquee Clients</h1>
         </header>
-        <div className="flex justify-around items-center mb-md-4 flex-wrap gap-y-10 md:gap-y-0">
-          <a
-            href="https://www.gojek.io/"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            <figure className="client">
-              <img
-                src="/img/clients/gojek-logo.svg"
-                className="illustration"
-                alt="Gojek"
-              />
-              <figcaption className="title sr-only">Gojek</figcaption>
-            </figure>
-          </a>
-          <figure className="client">
-            <a
-              href="https://flutura.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/flutura-logo-blue.png"
-                className="illustration"
-                alt="Flutura Decision Sciences Private Limited"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              Flutura Decision Sciences Private Limited
-            </figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://meesho.io/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/meesho.png"
-                className="illustration"
-                alt="Meesho Tech"
-              />
-            </a>
-            <figcaption className="title sr-only">Meesho Tech</figcaption>
-          </figure>
-        </div>
-        <div className="flex justify-around items-center mt-10 flex-wrap gap-y-10 md:gap-y-0">
-          <figure className="client">
-            <a
-              href="https://gethyphen.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/gethyphen.png"
-                className="illustration"
-                alt="getHyphen"
-              />
-            </a>
-            <figcaption className="title sr-only">getHyphen</figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://pacewisdom.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/pacewisdom-logo.png"
-                className="illustration"
-                alt="Pace Wisdom Solutions Pvt Ltd"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              Pace Wisdom Solutions Private Limited
-            </figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="https://www.honeydue.com/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/honeydue-logo.png"
-                className="illustration"
-                alt="Honeydue"
-              />
-            </a>
-            <figcaption className="title sr-only">Honeydue</figcaption>
-          </figure>
-          <figure className="client">
-            <a
-              href="http://addresshealth.in/web/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                src="/img/clients/AddressHealth.png"
-                className="illustration"
-                alt="AddressHealth Solutions India Private Limited"
-              />
-            </a>
-            <figcaption className="title sr-only">
-              AddressHealth Solutions India Pvt Ltd
-            </figcaption>
-          </figure>
-        </div>
+
+        <LogoCloud data={clients} />
       </section>
       {/* Our Clients */}
     </>

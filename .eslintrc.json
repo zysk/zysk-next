@@ -26,6 +26,26 @@
     ],
     "rules": {
         "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "no-console": 2,
+        "camelcase": [
+            "error",
+             {
+                "allow": ["id_token"]
+             }
+          ],
+        "capitalized-comments": [
+            "error",
+            "always",
+            {
+                "ignorePattern": "pragma|ignored",
+                "ignoreInlineComments": true
+            }
+        ],
+        "curly": ["error", "multi"],
+        "eqeqeq": ["error", "smart"],
+        "array-bracket-newline": ["error", { "multiline": true }],
+        "array-bracket-spacing": ["error", "never"],
+        "arrow-spacing": ["error", { "before": true, "after": true }]
     }
 }

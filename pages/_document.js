@@ -30,22 +30,6 @@ class MyDocument extends Document {
           {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
-          {process.env.env == "PROD" && (
-            <>
-              <script
-                src="https://t.ghostboard.io/min.js"
-                async
-                defer
-                data-gbid="609a7c953a29de7474d49404"
-              ></script>
-              <noscript>
-                <img
-                  src="https://ghostboard.io/api/noscript/609a7c953a29de7474d49404/pixel.gif"
-                  alt="Ghostboard pixel"
-                />
-              </noscript>
-            </>
-          )}
         </body>
       </Html>
     );
