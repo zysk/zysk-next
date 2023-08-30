@@ -284,3 +284,308 @@ html {
    font-weight:600;
    font-size:18px;
  }
+
+
+
+ /*zyskothon style */
+
+
+.maincontainer{
+min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    scroll-behavior: smooth;
+    color: #fff;
+
+ .zyskheader {
+
+  background: linear-gradient(to right bottom, #FF4B4B, rgb(64, 62, 62));
+
+  color: #ffffff;
+
+  text-align: center;
+
+  padding: 10px 0;
+
+  position: relative;
+
+}
+
+.heading {
+  font-family: 'Black Ops One', cursive;
+}
+
+.prize-sticker {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 25px;
+
+  transform: translateY(-50%);
+}
+
+.container {
+  width: 788px;
+  height: 77vh;
+  overflow-y: scroll;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(231, 41, 41, 0.4);
+}
+
+.box {
+  padding: 20px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.button-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+.button {
+
+  padding: 10px 20px;
+
+  background-color: #ad2020;
+
+  color: #fff;
+
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.button:hover {
+  background-color: #e98c8c;
+}
+
+.btn-active {
+  background-color: #e98c8c !important
+}
+
+.content-section {
+
+  display: none;
+
+  margin-top: 20px;
+
+  padding-bottom: 30px;
+
+}
+
+.content-section.active {
+
+  display: block;
+
+}
+
+.content-section h2 {
+
+  font-size: 1.5rem;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  color: #ad2020;
+
+}
+
+ul li{
+  color: white;
+}
+
+.marquee-container {
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  background-color: #ad2020;
+
+  padding: 10px 0;
+
+}
+
+.marquee {
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  animation: marquee 20s linear infinite;
+
+
+
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
+.left-sidebar,
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 77vh;
+  width: 15%;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(231, 41, 41, 0.4);
+}
+
+// .text-red {}
+
+.left-sidebar::-webkit-scrollbar,
+.right-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.left-sidebar-content,
+.right-sidebar-content {
+  /* text-align: justify; */
+  word-spacing: 4px;
+  line-height: 22px;
+}
+
+ul {
+  padding: 10px;
+}
+
+ul li {
+  margin-top: 15px;
+}
+
+ @keyframes marquee {
+
+0% {
+
+transform: translateX(100%);
+
+}
+
+100% {
+
+transform: translateX(-100%);
+
+}
+
+}
+
+.italic {
+  font-style: italic;
+  text-decoration: underline;
+  color: #FF4B4B;
+  margin-bottom: 15px;
+}
+
+
+
+table {
+
+  border-collapse: collapse;
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  font-size: 14px;
+
+  color: #fff;
+
+}
+
+p{
+  color: white;
+}
+
+th,
+td {
+
+  border: 1px solid #dddddd;
+
+  text-align: left;
+
+  padding: 8px;
+
+}
+
+
+
+th {
+
+  background-color: #ad2020;
+
+  color: white;
+
+}
+
+
+
+tr:nth-child(even) {
+
+  background-color: #262626;
+
+}
+
+.navbar {
+  position: sticky;
+  top: 0%;
+  height: 100px;
+  background-color: #312f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Table Styling */
+
+@media screen and (max-width: 600px) {
+
+  table {
+
+      font-size: 12px;
+
+  }
+
+}
+}

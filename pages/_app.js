@@ -4,8 +4,11 @@ import Layout from "../components/common/layout";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
+  const showNavFoot =
+    pageProps.showNavFoot !== undefined ? pageProps.showNavFoot : true;
+
   return (
-    <Layout>
+    <Layout showNavFoot={showNavFoot}>
       <Component {...pageProps} />
       <Script strategy="lazyOnload">
         {`var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?68350';
