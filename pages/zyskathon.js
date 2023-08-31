@@ -44,7 +44,7 @@ const zyskathon = () => {
           </div> */}
         </header>
 
-        <main className="maindiv grid md:grid-cols-4 items-center justify-center pt-20 gap-5 md:px-5">
+        <main className="maindiv grid md:grid-cols-4 items-center justify-center pt-20 gap-5 md:pl-0 pl-5 md:pr-0 pr-5 md:px-5">
           <div className="left-sidebar md:pt-0 pt-5">
             <h3 className="italic italicdown">Prize Pool: &#x20B9;40,000</h3>
             <span

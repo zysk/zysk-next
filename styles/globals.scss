@@ -468,8 +468,8 @@ ul li{
 .left-sidebar-content,
 .right-sidebar-content {
   /* text-align: justify; */
-  word-spacing: 4px;
-  line-height: 22px;
+  // word-spacing: 4px;
+  // line-height: 22px;
 }
 
 ul {
@@ -588,7 +588,7 @@ tr:nth-child(even) {
   }
 
   .right-sidebar{
-    border: 1px solid blue;
+    // border: 1px solid blue;
     overflow-y: scroll;
     padding:100px;
     
@@ -596,7 +596,7 @@ tr:nth-child(even) {
 
   .container{
     //max-width:80%;
-    border: solid blue;
+    // border: solid blue;
   }
 }
 
