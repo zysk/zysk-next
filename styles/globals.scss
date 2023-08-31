@@ -436,26 +436,21 @@ ul li{
 .marquee {
 
   white-space: nowrap;
-
   overflow: hidden;
-
   color: #ffffff;
-
   font-size: 16px;
-
   font-weight: bold;
-
   animation: marquee 20s linear infinite;
-
-
 
 }
 
 main {
+
   display: flex;
   justify-content: space-evenly;
   padding: 0px 20px;
   margin-top: 20px;
+  
 }
 
 .left-sidebar,
@@ -512,10 +507,14 @@ transform: translateX(-100%);
 }
 
 .italic {
-  font-style: italic;
+  font-weight: bold;
   text-decoration: underline;
   color: #FF4B4B;
-  margin-bottom: 15px;
+  
+}
+
+.italicdown{
+  margin-bottom: 20px;
 }
 
 
@@ -570,7 +569,8 @@ tr:nth-child(even) {
 .navbar {
   position: sticky;
   top: 0%;
-  height: 100px;
+  // height: 100px;
+  padding: 20px;
   background-color: #312f2f;
   display: flex;
   align-items: center;

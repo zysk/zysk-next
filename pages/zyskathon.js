@@ -37,9 +37,17 @@ const zyskathon = () => {
 
         <main>
           <div className="left-sidebar">
-            <h3 className="italic">Prize Pool: &#x20B9;40,000</h3>
+            <h3 className="italic italicdown">Prize Pool: &#x20B9;40,000</h3>
+            <span
+              style={{
+                fontWeight: "bold",
+                color: "#FF4B4B",
+                marginBottom: "20px",
+              }}
+            >
+              Unleash Innovation at the Hackathon! 🚀
+            </span>
             <p className="left-sidebar-content">
-              <h4>Unleash Innovation at the Hackathon! 🚀</h4>
               Get set for an incredible hackathon where creativity, innovation,
               and problem-solving meet for an impressive ₹40,000 prize pool!
               Join us in pushing tech boundaries through coding, design, and
@@ -49,6 +57,7 @@ const zyskathon = () => {
               spot now to win big!
             </p>
           </div>
+
           <div className="container">
             <div className="navbar">
               <div className="button-container">
@@ -105,14 +114,17 @@ const zyskathon = () => {
                   {/* <!-- <h2></h2> --> */}
                   <p className="welcome-heading">🌟 Welcome to ZyskaThon! 🌟</p>
 
-                  <p className="welcome-message">
+                  <p className="welcome-message" style={{ marginTop: "10px" }}>
                     Hello Team,
                     <br />
                     Mark your calendars! This September, we’re introducing a new
                     chapter in our Zysk journey — ZyskaThon!
                   </p>
 
-                  <div className="welcome-details">
+                  <div
+                    className="welcome-details"
+                    style={{ marginTop: "10px" }}
+                  >
                     <p>
                       <strong>📅 When:</strong> 22nd September
                     </p>
@@ -122,7 +134,7 @@ const zyskathon = () => {
                     </p>
                   </div>
 
-                  <p className="welcome-vision">
+                  <p className="welcome-vision" style={{ marginTop: "10px" }}>
                     <strong>🎯 The ZyskaThon Vision:</strong>
                     For many, this is a first-ever hackathon experience.
                     ZyskaThon isn’t just about coding; it’s about learning,
@@ -134,7 +146,10 @@ const zyskathon = () => {
                     creation.
                   </p>
 
-                  <p className="welcome-experience">
+                  <p
+                    className="welcome-experience"
+                    style={{ marginTop: "10px" }}
+                  >
                     <strong>🚀 The Experience:</strong>
                   </p>
 
@@ -171,13 +186,16 @@ const zyskathon = () => {
                     grows.
                   </p>
 
-                  <p className="welcome-announcements">
+                  <p
+                    className="welcome-announcements"
+                    style={{ marginTop: "10px" }}
+                  >
                     <strong>🔔 Upcoming Announcements:</strong>
                     Stay tuned! The topics for our hackathon will be shared
                     soon.
                   </p>
 
-                  <p className="welcome-dive-in">
+                  <p className="welcome-dive-in" style={{ marginTop: "10px" }}>
                     <strong>📣 Lets Dive In!:</strong>
                     While this is a new experience, remember that innovation
                     does not come only from expertise—it comes from passion,
@@ -186,7 +204,10 @@ const zyskathon = () => {
                     Zysk journey!
                   </p>
 
-                  <p className="welcome-questions">
+                  <p
+                    className="welcome-questions"
+                    style={{ marginTop: "10px" }}
+                  >
                     For any questions, feedback, or excitement you want to
                     share, please reach out to The Change Agents
                     <a href="mailto:baee656c.zysk.tech@in.teams.ms">
@@ -200,7 +221,7 @@ const zyskathon = () => {
                     celebrate!
                   </p>
 
-                  <p className="welcome-regards">
+                  <p className="welcome-regards" style={{ marginTop: "10px" }}>
                     Warmly,
                     <br />
                     The ZyskaThon Organizing Team
@@ -401,7 +422,9 @@ const zyskathon = () => {
                     and build amazing things together.
                   </p>
 
-                  <p className="rulebook-section">🤝 Participation:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🤝 Participation:
+                  </p>
 
                   <p>
                     Who’s In? All Zysk members. Because we believe in the power
@@ -413,14 +436,18 @@ const zyskathon = () => {
                     of a switch? Just chat with the event organizers.
                   </p>
 
-                  <p className="rulebook-section">📅 Mark the Calendar:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    📅 Mark the Calendar:
+                  </p>
 
                   <p>
                     Its coding time from 22nd September, 10:00 AM till 23rd
                     Sept, 2:00 PM. Keep those dates free!
                   </p>
 
-                  <p className="rulebook-section">🚀 The Challenge:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🚀 The Challenge:
+                  </p>
 
                   <p>
                     Excited about what you will be working on? Topics will be
@@ -432,7 +459,9 @@ const zyskathon = () => {
                     done before is not part of this.
                   </p>
 
-                  <p className="rulebook-section">🛠️ Toolkit:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🛠️ Toolkit:
+                  </p>
 
                   <p>
                     You’re free to pick your favorite tech tools. Unless we
@@ -440,7 +469,9 @@ const zyskathon = () => {
                     drivers seat.
                   </p>
 
-                  <p className="rulebook-section">💡 Code Ownership:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    💡 Code Ownership:
+                  </p>
 
                   <p>
                     Whatever cool stuff we create during ZyskaThon stays right
@@ -448,7 +479,7 @@ const zyskathon = () => {
                     just mention them – its the fair thing to do.
                   </p>
 
-                  <p className="rulebook-section">
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
                     🤝 It’s All About Teamwork:
                   </p>
 
@@ -465,7 +496,9 @@ const zyskathon = () => {
                     And a small reminder: Let’s be original and avoid copying.
                   </p>
 
-                  <p className="rulebook-section">🌟 Spotlight Moment:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🌟 Spotlight Moment:
+                  </p>
 
                   <p>
                     Once we’re done coding, each team will have 3 minutes to
@@ -478,7 +511,9 @@ const zyskathon = () => {
                     useful they could be, their design, and their impact.
                   </p>
 
-                  <p className="rulebook-section">❤️ Respect & Fun:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    ❤️ Respect & Fun:
+                  </p>
 
                   <p>
                     At Zysk, we believe in having fun the right way. That means
@@ -486,7 +521,9 @@ const zyskathon = () => {
                     feels included.
                   </p>
 
-                  <p className="rulebook-section">🏆 The Reward:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🏆 The Reward:
+                  </p>
 
                   <p>
                     Top Spot: The best team walks away with INR 40,000 worth of
@@ -503,21 +540,27 @@ const zyskathon = () => {
                     certificate and a big shout-out!
                   </p>
 
-                  <p className="rulebook-section">❓ Got Questions?:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    ❓ Got Questions?:
+                  </p>
 
                   <p>
                     No worries! If you are ever in doubt or need some clarity,
                     the Change Agents team is there to help.
                   </p>
 
-                  <p className="rulebook-section">📢 Staying Updated:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    📢 Staying Updated:
+                  </p>
 
                   <p>
                     Sometimes, things change. If we tweak these rules, you will
                     be the first to know.
                   </p>
 
-                  <p className="rulebook-section">🎉 Lastly:</p>
+                  <p className="rulebook-section" style={{ marginTop: "10px" }}>
+                    🎉 Lastly:
+                  </p>
 
                   <p>
                     ZyskaThon is not just about coding. It is about coming
@@ -591,7 +634,7 @@ const zyskathon = () => {
                     talent effectively.
                   </p>
 
-                  <p className="topic-section">
+                  <p className="topic-section" style={{ marginTop: "10px" }}>
                     2. Time-Sheet Management Application:
                   </p>
 
@@ -602,7 +645,7 @@ const zyskathon = () => {
                     any time.
                   </p>
 
-                  <p className="topic-section">
+                  <p className="topic-section" style={{ marginTop: "10px" }}>
                     3. Contract Management Application:
                   </p>
 
@@ -613,7 +656,9 @@ const zyskathon = () => {
                     milestones to enhance efficiency and compliance.
                   </p>
 
-                  <p className="topic-section">4. Self Certification Portal:</p>
+                  <p className="topic-section" style={{ marginTop: "10px" }}>
+                    4. Self Certification Portal:
+                  </p>
 
                   <p>
                     Build an online portal that empowers employees to complete
@@ -824,10 +869,13 @@ const zyskathon = () => {
               </section>
             </div>
           </div>
+
           <div className="right-sidebar">
             <h3 className="italic">Event Details</h3>
             <ul>
-              <li>Venue: Zysk Technologies</li>
+              <li style={{ fontWeight: "bold", color: "#FF4B4B" }}>
+                Venue: Zysk Technologies
+              </li>
               <li>Date: 22nd Sep 10 AM- 23rd Sep 6 PM</li>
             </ul>
             <p className="right-sidebar-contents">
