@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { React } from "react";
+import Head from "next/head";
+import Marquee from "react-fast-marquee";
 
 const zyskathon = () => {
   // Const [activeSection, setActiveSection] = useState(null);
@@ -19,10 +20,18 @@ const zyskathon = () => {
 
   return (
     <>
+      <Head>
+        <title>Zyskathon</title>
+        <meta
+          name="description"
+          content="Zysk Technologies is a web and mobile app development company. With a 25-member team and expertise in the latest technologies and are known for their excellent customer service."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="maincontainer">
-        <header className="zyskheader">
-          <h1 className="heading">ZyskaThon - 2023</h1>
-          <div className="prize-sticker">
+        <header className="zyskheader py-5 fixed top-0 left-0 right-0 z-20">
+          <h1 className="heading text-2xl">ZyskaThon - 2023</h1>
+          {/* <div className="prize-sticker">
             <Link href="/">
               <a>
                 <img
@@ -32,18 +41,18 @@ const zyskathon = () => {
                 />
               </a>
             </Link>
-          </div>
+          </div> */}
         </header>
 
-        <main>
-          <div className="left-sidebar">
+        <main className="maindiv grid md:grid-cols-4 items-center justify-center pt-20 gap-5 md:px-5">
+          <div className="left-sidebar md:pt-0 pt-5">
             <h3 className="italic italicdown">Prize Pool: &#x20B9;40,000</h3>
             <span
               style={{
                 fontWeight: "bold",
                 color: "#FF4B4B",
-                marginBottom: "20px",
               }}
+              className="pb-7"
             >
               Unleash Innovation at the Hackathon! 🚀
             </span>
@@ -58,7 +67,7 @@ const zyskathon = () => {
             </p>
           </div>
 
-          <div className="container">
+          <div className="container col-span-2">
             <div className="navbar">
               <div className="button-container">
                 <button
@@ -872,11 +881,20 @@ const zyskathon = () => {
 
           <div className="right-sidebar">
             <h3 className="italic">Event Details</h3>
+            <span
+              style={{
+                fontWeight: "bold",
+                color: "#FF4B4B",
+              }}
+              className="pt-5"
+            >
+              Unleash Innovation at the Hackathon! 🚀
+            </span>
             <ul>
-              <li style={{ fontWeight: "bold", color: "#FF4B4B" }}>
-                Venue: Zysk Technologies
+              <li>Venue: Zysk Technologies</li>
+              <li>
+                <span>Date: </span>22nd Sep 10 AM - 23rd Sep 6 PM
               </li>
-              <li>Date: 22nd Sep 10 AM- 23rd Sep 6 PM</li>
             </ul>
             <p className="right-sidebar-contents">
               Explore the essential information about the hackathon, including
@@ -885,7 +903,10 @@ const zyskathon = () => {
             </p>
           </div>
         </main>
-        <div className="marquee-container">
+
+        {/* <div style={{marginTop:"5rem"}}></div> */}
+
+        {/* <div className="marquee-container">
           <marquee
             className="marquee"
             behavior="scroll"
@@ -896,6 +917,24 @@ const zyskathon = () => {
             you here. Note: Please start preparing for the given topics. Get
             ready to innovate! Prize Pool: ₹40,000
           </marquee>
+         </div>  */}
+
+        <div
+          style={{
+            backgroundColor: "#ad2020",
+            padding: "10px",
+            width: "100%",
+            marginTop: "20px",
+          }}
+        >
+          <Marquee pauseOnHover={true} direction="left">
+            <p style={{ fontSize: "1rem" }}>
+              {" "}
+              Hey, it is ZyskaThon! Welcome to our event. We are excited to have
+              you here. &nbsp;Note: Please start preparing for the given topics.
+              Get ready to innovate! Prize Pool: ₹40,000
+            </p>
+          </Marquee>
         </div>
       </div>
     </>
