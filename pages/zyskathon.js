@@ -28,7 +28,7 @@ const zyskathon = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="maincontainer">
+      <div className="maincontainer md:px-5">
         <header className="zyskheader py-5 fixed top-0 left-0 right-0 z-20">
           <h1 className="heading text-2xl">ZyskaThon - 2023</h1>
           {/* <div className="prize-sticker">
@@ -44,8 +44,8 @@ const zyskathon = () => {
           </div> */}
         </header>
 
-        <main className="maindiv grid md:grid-cols-4 items-center justify-center pt-20 gap-5 md:pl-0 pl-5 md:pr-0 pr-5 md:px-5">
-          <div className="left-sidebar md:pt-0 pt-5">
+        <main className="maindiv grid md:grid-cols-4 items-center justify-center pt-20 md:gap-5 gap-0 md:pl-0 pl-5 md:pr-0 pr-5 md:px-5">
+          <div className="left-sidebar md:mb-0 mb-5 md:pt-0 pt-5 md:h-[77vh] h-auto">
             <h3 className="italic italicdown">Prize Pool: &#x20B9;40,000</h3>
             <span
               style={{
@@ -67,12 +67,12 @@ const zyskathon = () => {
             </p>
           </div>
 
-          <div className="container col-span-2">
+          <div className="container col-span-2 h-[77vh]">
             <div className="navbar">
               <div className="button-container">
                 <button
                   onClick={() => toggleSection("introduction")}
-                  className="button"
+                  className="button "
                 >
                   Introduction
                 </button>
@@ -109,10 +109,10 @@ const zyskathon = () => {
               </div>
             </div>
 
-            <div className="box">
+            <div className="box md:h-[77vh] scrollbar-hide overflow-x-scroll">
               <section className="active content-section">
                 <div>
-                  <img src="/geek2.gif" alt="image1" />
+                  <img src="/geek2.gif" alt="image1" className="mx-auto" />
                 </div>
               </section>
 
@@ -879,7 +879,7 @@ const zyskathon = () => {
             </div>
           </div>
 
-          <div className="right-sidebar">
+          <div className="right-sidebar md:mb-0 mb-20 md:mt-0 mt-6 md:h-[77vh] h-auto">
             <h3 className="italic">Event Details</h3>
             <span
               style={{
@@ -893,7 +893,7 @@ const zyskathon = () => {
             <ul>
               <li>Venue: Zysk Technologies</li>
               <li>
-                <span>Date: </span>22nd Sep 10 AM - 23rd Sep 6 PM
+                <span>Date: </span>Sept 22, 10 AM - Sept 23, 6 PM
               </li>
             </ul>
             <p className="right-sidebar-contents">
@@ -918,24 +918,26 @@ const zyskathon = () => {
             ready to innovate! Prize Pool: ₹40,000
           </marquee>
          </div>  */}
-
-        <div
-          style={{
-            backgroundColor: "#ad2020",
-            padding: "10px",
-            width: "100%",
-            marginTop: "20px",
-          }}
-        >
-          <Marquee pauseOnHover={true} direction="left">
-            <p style={{ fontSize: "1rem" }}>
-              {" "}
-              Hey, it is ZyskaThon! Welcome to our event. We are excited to have
-              you here. &nbsp;Note: Please start preparing for the given topics.
-              Get ready to innovate! Prize Pool: ₹40,000
-            </p>
-          </Marquee>
-        </div>
+      </div>
+      <div
+        className="md:px-0"
+        style={{
+          backgroundColor: "#ad2020",
+          padding: "10px",
+          width: "100%",
+          // MarginTop: "20px",
+          position: "fixed",
+          bottom: 0,
+        }}
+      >
+        <Marquee pauseOnHover={true} direction="left">
+          <p style={{ fontSize: "1rem" }} className="text-white">
+            {" "}
+            Hey, it is ZyskaThon! Welcome to our event. We are excited to have
+            you here. &nbsp;Note: Please start preparing for the given topics.
+            Get ready to innovate! Prize Pool: ₹40,000
+          </p>
+        </Marquee>
       </div>
     </>
   );

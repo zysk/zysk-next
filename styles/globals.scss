@@ -4,7 +4,7 @@
 
 body {
     min-height: 100vh;
-    border: 0.5rem solid #ff4b4b;
+    //border: 0.5rem solid #ff4b4b;
     border-bottom: 0;
     overflow-y: scroll;
     font-family: 'Barlow', sans-serif;
@@ -77,7 +77,7 @@ $fluorescent-color: #84f3ec;
 body {
   min-height: 100vh;
   font-family: $font-barlow;
-  border: 0.5rem solid $red-color;
+  //border: 0.5rem solid $red-color;
   border-bottom: 0;
   overflow-y: scroll;
 }
@@ -293,8 +293,8 @@ html {
 .maincontainer{
   
 
-    //min-height: 100vh;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
@@ -312,9 +312,9 @@ html {
 
 }
 
-.heading {
-  font-family: 'Black Ops One', cursive;
-}
+// .heading {
+//   font-family: 'Black Ops One', cursive;
+// }
 
 .prize-sticker {
   display: flex;
@@ -331,7 +331,7 @@ html {
 
 .container {
   // width: 788px;
-  height: 77vh;
+  //height: 77vh;
   overflow-y: scroll;
   background-color: #262626;
   border-radius: 10px;
@@ -345,6 +345,7 @@ html {
 .container::-webkit-scrollbar {
   display: none;
 }
+
 
 .button-container {
 
@@ -447,10 +448,8 @@ ul li{
 .right-sidebar {
   display: flex;
   flex-direction: column;
-  height: 77vh;
-  // width: 15%;
   overflow-y: scroll;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 20px;
   color: white;
   background-color: #262626;
@@ -562,7 +561,11 @@ tr:nth-child(even) {
   justify-content: center;
 }
 
-
+@media screen and (min-width:992px) {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 /* Responsive Table Styling */
 
@@ -581,14 +584,14 @@ tr:nth-child(even) {
   //   gap: 2rem;
   // }
 
-  .left-sidebar,
-  .right-sidebar{
-    //min-width: 80%;
-    max-height: 30vh;
-  }
+  // .left-sidebar,
+  // .right-sidebar{
+  //   min-width: 100%;
+  //   max-height: 30vh;
+  // }
 
   .right-sidebar{
-    // border: 1px solid blue;
+  
     overflow-y: scroll;
     padding:100px;
     
@@ -600,11 +603,10 @@ tr:nth-child(even) {
   }
 }
 
-@media screen and (max-width:600px) {
-  // .heading{
-  //    display: flex;
-  //    justify-content: flex-end;
-  //    margin-right: 1rem;
-  // }
-}
+// @media screen and (max-width:600) {
+//   .left-sidebar,
+// .right-sidebar{
+//   height: fit-content;
+// }
+// }
 
