@@ -561,6 +561,10 @@ tr:nth-child(even) {
   justify-content: center;
 }
 
+.activebtn{
+  background-color: blue;
+}
+
 @media screen and (min-width:992px) {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;

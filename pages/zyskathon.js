@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState } from "react";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
 
@@ -9,8 +9,12 @@ const zyskathon = () => {
   //     SetActiveSection(sectionName);
   // };
 
+  const [activeSection, setActiveSection] = useState("");
+
   let toggleSection = (sectionId) => {
     const sections = document.querySelectorAll(".content-section");
+
+    setActiveSection(sectionId);
 
     sections.forEach((section) => {
       if (section.id === sectionId) section.classList.add("active");
@@ -72,37 +76,49 @@ const zyskathon = () => {
               <div className="button-container">
                 <button
                   onClick={() => toggleSection("introduction")}
-                  className="button "
+                  className={`button ${
+                    activeSection === "introduction" ? "activebtn" : ""
+                  }`}
                 >
                   Introduction
                 </button>
                 <button
                   onClick={() => toggleSection("teams")}
-                  className="button"
+                  className={`button ${
+                    activeSection === "teams" ? "activebtn" : ""
+                  }`}
                 >
                   Teams
                 </button>
                 <button
                   onClick={() => toggleSection("topics")}
-                  className="button"
+                  className={`button ${
+                    activeSection === "topics" ? "activebtn" : ""
+                  }`}
                 >
                   Topics
                 </button>
                 <button
                   onClick={() => toggleSection("guidance")}
-                  className="button"
+                  className={`button ${
+                    activeSection === "guidance" ? "activebtn" : ""
+                  }`}
                 >
                   Evaluation Guideline
                 </button>
                 <button
                   onClick={() => toggleSection("rulebook")}
-                  className="button"
+                  className={`button ${
+                    activeSection === "rulebook" ? "activebtn" : ""
+                  }`}
                 >
                   Rulebook
                 </button>
                 <button
                   onClick={() => toggleSection("support")}
-                  className="button"
+                  className={`button ${
+                    activeSection === "support" ? "activebtn" : ""
+                  }`}
                 >
                   Support
                 </button>
