@@ -43,23 +43,6 @@ export const links = [
     type: "external",
   },
   {
-    id: 9,
-    name: "Our Policy",
-    url: "#",
-    children: [
-      {
-        id: 6,
-        name: "POSH Policy",
-        url: "/posh_policy.pdf",
-      },
-      {
-        id: 4,
-        name: "ICC Nomination",
-        url: "/ICC_Nomination.pdf",
-      },
-    ],
-  },
-  {
     id: 10,
     name: "Contact",
     url: "/contact",
