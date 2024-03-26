@@ -1,13 +1,13 @@
 import "../styles/globals.scss";
 import "tailwindcss/tailwind.css";
 import Layout from "../components/common/layout";
-import Script from "next/script";
+// Import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-      <Script strategy="lazyOnload">
+      {/* <Script strategy="lazyOnload">
         {`var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?68350';
     var s = document.createElement('script');
     s.type = 'text/javascript';
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);`}
-      </Script>
+      </Script> */}
     </Layout>
   );
 }
