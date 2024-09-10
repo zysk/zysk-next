@@ -47,4 +47,10 @@ export const links = [
     name: "Contact",
     url: "/contact",
   },
+  {
+    id: 11,
+    name: "Careers",
+    url: "https://zysktechnologies.keka.com/careers",
+    type: "external",
+  },
 ];
