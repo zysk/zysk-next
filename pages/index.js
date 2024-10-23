@@ -42,7 +42,7 @@ const Home = () => {
               />
             </div>
             <a
-              href={"/Zysk_Pitch.pdf"}
+              href={"/Zysk-Portfolio.pdf"}
               target="_blank"
               className="bg-[#F03B2F] mt-10 py-2 md:py-1.5 font-semibold px-5 text-white goldplay-medium rounded-[88px] text-sm"
               rel="noreferrer"
