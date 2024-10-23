@@ -1,12 +1,14 @@
+/* eslint-disable no-unused-vars */
+
 import Navbar from "./header";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
