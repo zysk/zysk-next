@@ -5,6 +5,7 @@ import Button from "../components/common/button";
 import { clients } from "../components/home/data";
 import LogoCloud from "../components/home/client-slider";
 import { useState } from "react";
+import Link from "next/link";
 
 const Home = () => {
   const [showData, setShowData] = useState(true);
@@ -40,9 +41,14 @@ const Home = () => {
                 alt="under-maintenance"
               />
             </div>
-            <button className="bg-[#F03B2F] mt-10 py-2 md:py-1.5 font-semibold px-5 text-white goldplay-medium rounded-[88px] text-sm">
+            <a
+              href={"/Zysk_Pitch.pdf"}
+              target="_blank"
+              className="bg-[#F03B2F] mt-10 py-2 md:py-1.5 font-semibold px-5 text-white goldplay-medium rounded-[88px] text-sm"
+              rel="noreferrer"
+            >
               COMPANY PROFILE
-            </button>
+            </a>
           </div>
         </section>
       ) : (
