@@ -25,23 +25,24 @@ const Home = () => {
         <section className="min-h-[100vh] flex flex-col justify-center items-center">
           <div className="max-w-7xl flex flex-col justify-center items-center mx-5 md:mx-auto">
             <img src="/img/landing/zysk-logo.svg" alt="Zysk-Technologies" />
-            <h1 className=" text-2xl md:text-[40px] text-[#101828] mt-6 font-black">
+            <h1 className="text-[28px] text-center md:text-4xl text-[#101828] mt-6 font-black">
               🚧 Exciting Changes Are Coming! 🚀
             </h1>
-            <p className="text-[#475467] text-xl mt-6 text-center font-medium">
+            <p className="text-[#475467] px-4 md:px-0 goldplay-medium text-lg mt-6 text-center font-medium">
               We’re working behind the scenes to bring you a brand-new website
               experience.
+              <br /> Stay tuned—something amazing is on the way!
             </p>
-            <p className="text-[#475467] text-xl mt-1 text-center font-medium">
-              Stay tuned—something amazing is on the way!
-            </p>
-            <div className="md:w-[460px] md:h-[207px] mt-8">
+            <div className="md:w-[400px] md:h-[207px] mt-8">
               <img
-                src="/img/landing/under-maintenance.png"
+                src="/img/landing/zysk-maintenance.png"
                 className="w-full h-full"
                 alt="under-maintenance"
               />
             </div>
+            <button className="bg-[#F03B2F] mt-10 py-2 md:py-1.5 font-semibold px-5 text-white goldplay-medium rounded-[88px] text-sm">
+              COMPANY PROFILE
+            </button>
           </div>
         </section>
       ) : (
