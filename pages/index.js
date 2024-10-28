@@ -47,7 +47,7 @@ const Home = () => {
               className="bg-[#F03B2F] mt-10 py-2 md:py-1.5 font-semibold px-5 text-white goldplay-medium rounded-[88px] text-sm"
               rel="noreferrer"
             >
-              COMPANY PROFILE
+              View Company Profile
             </a>
           </div>
         </section>
