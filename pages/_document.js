@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Enable GTM only for production environment */}
+          <link rel="icon" href="/img/favicon.ico.svg" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-66233587-1`}
